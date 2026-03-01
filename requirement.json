@@ -1,0 +1,42 @@
+Developer: {
+  "objectives": [
+    "To develop API-based websites to simulate the functionalities of LMS system services among different entities."
+  ],
+  "submission": "Project showcasing.",
+  "description": "Simulate the functionalities of a learning management system (LMS) among different entities.",
+  "entities": {
+    "LMS_organisation": {
+      "role": "host video and learning contents for viewers; facilitate learning"
+    },
+    "instructor": {
+      "role": "upload learning materials (text, audio, video, mcq)",
+      "courses_limit": 5,
+      "payment_model": "lump sum amount per uploaded course"
+    },
+    "learner": {
+      "role": "can take courses by paying specified amounts",
+      "certificate": "awarded after completion"
+    }
+  },
+  "assumptions": [
+    "The LMS system only hosts 5 courses.",
+    "Courses and corresponding materials are uploaded by 3 different instructors.",
+    "Instructors get a lump sum amount whenever they upload a course.",
+    "A learner can buy any course by paying fees and is awarded a certificate upon completion."
+  ],
+  "flow": [
+    "A registered learner logs into the LMS website and lands on the home page after successful login.",
+    "On the first visit to the home page, the user sets up bank information (account number) and adds a secret for bank transactions.",
+    "Learner views available courses and can choose and buy from the 5 hosted courses.",
+    "Purchase amount is calculated and a transaction request is sent to the bank with user bank information.",
+    "Upon successful payment, a confirmation message is shown.",
+    "The LMS organisation interacts with the bank to create a transaction record so the instructor can collect payment from the LMS organisation's account.",
+    "The instructor validates the transaction record with the bank and receives payment upon validation. The course is then accessible to the learner.",
+    "After course completion, the learner is awarded a certificate.",
+    "Instructors can upload new courses or materials and receive payment.",
+    "There must be a mechanism for the instructor, the e-commerce (LMS) organisation, and the learner to get their bank balance."
+  ],
+  "implementation_requirements": [
+    "Use Nodejs and REST APIs to implement the project."
+  ]
+}

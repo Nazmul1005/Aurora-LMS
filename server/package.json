@@ -1,0 +1,28 @@
+{
+  "name": "lms-simulator-server",
+  "version": "1.0.0",
+  "description": "REST API backend for LMS simulation with credit-based bank",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --ignore data/* src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "lms",
+    "simulation",
+    "credit-bank"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pdfkit": "^0.17.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
