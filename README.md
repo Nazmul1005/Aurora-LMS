@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Aurora LMS ✨
+## ✨ Aurora LMS ✨
 
 ### A Modern Learning Management System
 
